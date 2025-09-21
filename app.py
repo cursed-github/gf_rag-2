@@ -1,3 +1,14 @@
+# ---- SQLite shim for Streamlit Cloud (must be first) ----
+try:
+    import pysqlite3  # provides a modern SQLite (>3.35)
+    import sys
+    sys.modules["sqlite3"] = pysqlite3
+    sys.modules["sqlite"] = pysqlite3
+except Exception:
+    pass
+# ---------------------------------------------------------
+
+
 import os
 import json
 import streamlit as st

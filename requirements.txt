@@ -13,3 +13,4 @@ chromadb==0.5.5
 # Misc deps
 pydantic>=2
 lxml
+pysqlite3-binary==0.5.3
