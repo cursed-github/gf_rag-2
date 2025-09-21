@@ -5,12 +5,11 @@ python-dotenv
 langchain>=0.2
 langchain-core>=0.2
 langchain-openai
-langchain-chroma>=0.1.3
+langchain-chroma==0.1.1
 
-# Vector store
-chromadb==0.5.5
+# Chroma (DuckDB backend, no SQLite requirement)
+chromadb==0.4.24
 
-# Misc deps
+# Misc
 pydantic>=2
 lxml
-pysqlite3-binary==0.5.3

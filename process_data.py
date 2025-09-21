@@ -31,7 +31,7 @@ EMBED_MODEL = os.environ.get("EMBED_MODEL", "text-embedding-3-large")
 # -----------------------------
 # INIT
 # -----------------------------
-model = ChatOpenAI(temperature=0, model=CHAT_MODEL)
+model = ChatOpenAI(model=CHAT_MODEL, temperature=1)
 embeddings = OpenAIEmbeddings(model=EMBED_MODEL)
 
 vectorstore = Chroma(

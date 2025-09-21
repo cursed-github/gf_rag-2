@@ -1,12 +1,3 @@
-# ---- SQLite shim for Streamlit Cloud (must be FIRST) ----
-try:
-    import pysqlite3 as sqlite3  # new sqlite
-    import sys
-    sys.modules["sqlite3"] = sqlite3
-    sys.modules["sqlite"] = sqlite3
-except Exception:
-    pass
-# ---------------------------------------------------------
 
 import os
 import json
@@ -111,7 +102,8 @@ prompt = ChatPromptTemplate.from_template(
 
 def build_chain():
     retriever = build_retriever()
-    llm = ChatOpenAI(temperature=0, model=CHAT_MODEL)
+    llm = ChatOpenAI(model=CHAT_MODEL, temperature=1)
+
 
     chain = (
         {
