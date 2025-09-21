@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+
+langchain>=0.2
+langchain-core>=0.2
+langchain-openai
+langchain-chroma
+
+unstructured[all-docs]
+lxml
+
+# Optional but commonly needed by unstructured on some systems
+pydantic>=2
