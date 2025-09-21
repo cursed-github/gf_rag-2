@@ -1,13 +1,15 @@
 streamlit
 python-dotenv
 
+# LangChain stack
 langchain>=0.2
 langchain-core>=0.2
 langchain-openai
-langchain-chroma
+langchain-chroma>=0.1.3
 
-unstructured[all-docs]
-lxml
+# Vector store
+chromadb==0.5.5
 
-# Optional but commonly needed by unstructured on some systems
+# Misc deps
 pydantic>=2
+lxml
