@@ -13,4 +13,3 @@ chromadb==0.4.24
 # Misc
 pydantic>=2
 lxml
-py
