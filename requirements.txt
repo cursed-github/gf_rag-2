@@ -2,12 +2,12 @@ streamlit
 python-dotenv
 
 # LangChain stack
-langchain>=0.2
-langchain-core>=0.2
-langchain-openai
+langchain==0.2.14
+langchain-core==0.2.38
+langchain-openai==0.1.22
 langchain-chroma==0.1.1
 
-# Chroma (DuckDB backend, no SQLite requirement)
+# Chroma (DuckDB backend; avoids sqlite entirely)
 chromadb==0.4.24
 
 # Misc
